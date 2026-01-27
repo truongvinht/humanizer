@@ -11,16 +11,47 @@ mkdir -p ~/.claude/skills
 git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer
 ```
 
-### Manual install/update (only the skill file)
+### Manual install/update (specific language)
 
-If you already have this repo cloned (or you downloaded `SKILL.md`), copy the skill file into Claude Code’s skills directory:
+If you already have this repo cloned, you can copy specific language skill files into Claude Code's skills directory:
 
+**English:**
 ```bash
-mkdir -p ~/.claude/skills/humanizer
-cp SKILL.md ~/.claude/skills/humanizer/
+mkdir -p ~/.claude/skills/humanizer/en
+cp en/SKILL.md ~/.claude/skills/humanizer/en/
 ```
 
+**German (Deutsch):**
+```bash
+mkdir -p ~/.claude/skills/humanizer/de
+cp de/SKILL.md ~/.claude/skills/humanizer/de/
+```
+
+**Chinese Simplified (简体中文):**
+```bash
+mkdir -p ~/.claude/skills/humanizer/zh
+cp zh/SKILL.md ~/.claude/skills/humanizer/zh/
+```
+
+## Directory Structure
+
+The skill is organized by language, with each language in its own directory:
+
+```
+humanizer/
+├── en/SKILL.md          # English skill (24 patterns)
+├── de/SKILL.md          # German skill (27 patterns)
+├── zh/SKILL.md          # Chinese Simplified skill (32 patterns)
+├── README.md            # This file
+├── CLAUDE.md            # Developer documentation
+└── WARP.md              # WARP IDE integration
+```
+
+Each language skill has independent versioning and can evolve separately while maintaining conceptual alignment on core patterns #1-24.
+
 ## Usage
+
+### English
 
 In Claude Code, invoke the skill:
 
@@ -35,6 +66,53 @@ Or ask Claude to humanize text directly:
 ```
 Please humanize this text: [your text]
 ```
+
+### German (Deutsch)
+
+For German language text, use the German skill:
+
+```
+/humanizer-de
+
+[deutschen Text hier einfügen]
+```
+
+Or ask in German:
+
+```
+Bitte humanisiere diesen Text: [dein Text]
+```
+
+The German skill includes all 24 core patterns plus 3 German-specific patterns:
+- Pattern #25: Excessive nominalization (Substantivierung)
+- Pattern #26: Passive voice overuse (Passiv-Übernutzung)
+- Pattern #27: Inappropriate formality (Übertriebene Formalität)
+
+### Chinese Simplified (简体中文)
+
+For Simplified Chinese text, use the Chinese skill:
+
+```
+/humanizer-zh
+
+[在此粘贴中文文本]
+```
+
+Or ask in Chinese:
+
+```
+请帮我人性化这段文字：[你的文字]
+```
+
+The Chinese skill includes all 24 core patterns plus 8 Chinese-specific patterns:
+- Pattern #25: Chengyu stacking (成语堆砌)
+- Pattern #26: Excessive written language (书面语过度)
+- Pattern #27: Westernized sentence structure (西化句式)
+- Pattern #28: Redundant intensifiers (冗余强调)
+- Pattern #29: Empty bureaucratic phrases (套话空话)
+- Pattern #30: Comma abuse (逗号滥用)
+- Pattern #31: Excessive parallel structure (排比过度)
+- Pattern #32: Mechanical translation traces (机翻痕迹)
 
 ## Overview
 
@@ -132,10 +210,17 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 
 ## Version History
 
+### English Skill (en/SKILL.md)
 - **2.1.1** - Fixed pattern #18 example (curly quotes vs straight quotes)
 - **2.1.0** - Added before/after examples for all 24 patterns
 - **2.0.0** - Complete rewrite based on raw Wikipedia article content
 - **1.0.0** - Initial release
+
+### German Skill (de/SKILL.md)
+- **1.0.0** - Initial German language release with 27 patterns (24 core + 3 German-specific)
+
+### Chinese Simplified Skill (zh/SKILL.md)
+- **1.0.0** - Initial Simplified Chinese release with 32 patterns (24 core + 8 Chinese-specific)
 
 ## License
 
