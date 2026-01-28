@@ -28,6 +28,33 @@ This is a **Claude Code skill** that removes AI-generated writing patterns from 
   - Version history for all skills
 - **WARP.md** - WARP IDE integration guide
 
+### Installation Scripts
+- **install.sh** - Unix/macOS installation script
+  - Bash script with robust error handling
+  - Detects Claude Code skills directory automatically
+  - Supports symlink mode for development (`--symlink`)
+  - Custom directory option (`--directory`)
+  - Color-coded output and comprehensive logging
+  - Backs up existing skills before installation
+- **install.ps1** - Windows PowerShell installation script
+  - Feature parity with bash script
+  - Admin privilege detection for symlinks
+  - Windows-specific path handling
+  - Cmdlet-based implementation following PowerShell best practices
+- **install.bat** - Windows batch file wrapper
+  - Launches PowerShell script for users who prefer .bat files
+  - Checks PowerShell availability
+  - Simple interface with pause for error review
+
+**Installation Script Features:**
+- **Auto-detection**: Finds Claude Code skills directory across platforms
+- **All-in-one**: Installs all three language variants (en, de, zh)
+- **Safe**: Creates backups before overwriting existing skills
+- **Verified**: Post-installation verification checks
+- **Cross-platform**: Works on macOS, Linux, Windows
+- **Development mode**: Symlink option for live editing during development
+- **Idempotent**: Safe to run multiple times
+
 ### Critical Constraints
 
 #### Trilingual Architecture

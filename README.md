@@ -4,33 +4,79 @@ A Claude Code skill that removes signs of AI-generated writing from text, making
 
 ## Installation
 
-### Recommended (clone directly into Claude Code skills directory)
+### Automated Installation (Recommended)
 
+The easiest way to install all three language skills at once:
+
+**macOS/Linux:**
+```bash
+git clone https://github.com/blader/humanizer.git
+cd humanizer
+./install.sh
+```
+
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/blader/humanizer.git
+cd humanizer
+.\install.ps1
+```
+
+**Windows (Command Prompt):**
+```cmd
+git clone https://github.com/blader/humanizer.git
+cd humanizer
+install.bat
+```
+
+The installation script will:
+- Detect your Claude Code skills directory automatically
+- Install all three language variants (English, German, Chinese)
+- Create backups of existing skills
+- Verify the installation
+
+**Installation Options:**
+
+Development mode (symlinks for live editing):
+```bash
+./install.sh --symlink        # macOS/Linux
+.\install.ps1 -Symlink        # Windows (requires admin)
+```
+
+Custom directory:
+```bash
+./install.sh --directory ~/custom/path     # macOS/Linux
+.\install.ps1 -Directory "C:\Custom\Path"  # Windows
+```
+
+### Manual Installation
+
+If you prefer manual installation:
+
+**Git clone method:**
 ```bash
 mkdir -p ~/.claude/skills
 git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer
 ```
 
-### Manual install/update (specific language)
-
-If you already have this repo cloned, you can copy specific language skill files into Claude Code's skills directory:
+**Copy individual language skills:**
 
 **English:**
 ```bash
-mkdir -p ~/.claude/skills/humanizer/en
-cp en/SKILL.md ~/.claude/skills/humanizer/en/
+mkdir -p ~/.claude/skills/humanizer-en
+cp en/SKILL.md ~/.claude/skills/humanizer-en/
 ```
 
 **German (Deutsch):**
 ```bash
-mkdir -p ~/.claude/skills/humanizer/de
-cp de/SKILL.md ~/.claude/skills/humanizer/de/
+mkdir -p ~/.claude/skills/humanizer-de
+cp de/SKILL.md ~/.claude/skills/humanizer-de/
 ```
 
 **Chinese Simplified (简体中文):**
 ```bash
-mkdir -p ~/.claude/skills/humanizer/zh
-cp zh/SKILL.md ~/.claude/skills/humanizer/zh/
+mkdir -p ~/.claude/skills/humanizer-zh
+cp zh/SKILL.md ~/.claude/skills/humanizer-zh/
 ```
 
 ## Directory Structure
@@ -42,6 +88,9 @@ humanizer/
 ├── en/SKILL.md          # English skill (24 patterns)
 ├── de/SKILL.md          # German skill (27 patterns)
 ├── zh/SKILL.md          # Chinese Simplified skill (32 patterns)
+├── install.sh           # Unix/macOS installation script
+├── install.ps1          # Windows PowerShell installation script
+├── install.bat          # Windows batch file wrapper
 ├── README.md            # This file
 ├── CLAUDE.md            # Developer documentation
 └── WARP.md              # WARP IDE integration
