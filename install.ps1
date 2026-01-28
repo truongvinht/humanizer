@@ -80,9 +80,7 @@ function Get-SkillsDirectory {
         }
     }
 
-    # Default to first option
-    Write-Warning "Claude Code skills directory not found"
-    Write-Info "Will create directory at: $($possiblePaths[0])"
+    # Default to first option (will be created automatically)
     return $possiblePaths[0]
 }
 

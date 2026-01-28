@@ -50,10 +50,8 @@ detect_skills_directory() {
     elif [[ -d "$HOME/Library/Application Support/Claude/skills" ]]; then
         skills_dir="$HOME/Library/Application Support/Claude/skills"
     else
-        # Default to ~/.claude/skills
+        # Default to ~/.claude/skills (will be created automatically)
         skills_dir="$HOME/.claude/skills"
-        log_warning "Claude Code skills directory not found"
-        log_info "Will create directory at: $skills_dir"
     fi
 
     echo "$skills_dir"
