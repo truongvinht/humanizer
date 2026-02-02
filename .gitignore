@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Development/testing artifacts
+*[WARNING]*
+*[INFO]*
+*[ERROR]*
+
+# Node modules (if any JS tooling is added later)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Backup files
+*.backup.*
