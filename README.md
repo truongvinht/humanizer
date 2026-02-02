@@ -1,7 +1,7 @@
 # Humanizer
 A Claude Code skill that removes signs of AI-generated writing from text, making it sound more natural and human.
 
-[![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](#-version-history)
+[![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#-license)
 [![GitHub](https://img.shields.io/badge/github-humanizer-black.svg)](https://github.com/truongvinht/humanizer)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-brightgreen.svg)](https://claude.ai/code)
@@ -390,7 +390,9 @@ Contributions are welcome! If you'd like to add new patterns, improve examples, 
 
 ## 📝 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for full details.
+
+**In short:** You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software.
 
 ---
 
@@ -449,17 +451,12 @@ Need help or have questions?
 
 ## 📊 Version History
 
-### English Skill (en/SKILL.md)
-- **2.1.1** - Fixed pattern #18 example (curly quotes vs straight quotes)
-- **2.1.0** - Added before/after examples for all 24 patterns
-- **2.0.0** - Complete rewrite based on raw Wikipedia article content
-- **1.0.0** - Initial release
+See [CHANGELOG.md](CHANGELOG.md) for detailed version history of all language skills.
 
-### German Skill (de/SKILL.md)
-- **1.0.0** - Initial German language release with 27 patterns (24 core + 3 German-specific)
-
-### Chinese Simplified Skill (zh/SKILL.md)
-- **1.0.0** - Initial Simplified Chinese release with 32 patterns (24 core + 8 Chinese-specific)
+**Current Versions:**
+- English (en/SKILL.md): **v2.1.1**
+- German (de/SKILL.md): **v1.0.0**
+- Chinese Simplified (zh/SKILL.md): **v1.0.0**
 
 ---
 
