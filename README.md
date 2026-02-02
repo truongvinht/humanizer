@@ -3,7 +3,7 @@ A Claude Code skill that removes signs of AI-generated writing from text, making
 
 [![Version](https://img.shields.io/badge/version-2.1.1-blue.svg)](#-version-history)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](#-license)
-[![GitHub](https://img.shields.io/badge/github-humanizer-black.svg)](https://github.com/blader/humanizer)
+[![GitHub](https://img.shields.io/badge/github-humanizer-black.svg)](https://github.com/truongvinht/humanizer)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-brightgreen.svg)](https://claude.ai/code)
 
 ---
@@ -75,21 +75,21 @@ The easiest way to install all three language skills at once:
 
 **macOS/Linux:**
 ```bash
-git clone https://github.com/blader/humanizer.git
+git clone https://github.com/truongvinht/humanizer.git
 cd humanizer
 ./install.sh
 ```
 
 **Windows (PowerShell):**
 ```powershell
-git clone https://github.com/blader/humanizer.git
+git clone https://github.com/truongvinht/humanizer.git
 cd humanizer
 .\install.ps1
 ```
 
 **Windows (Command Prompt):**
 ```cmd
-git clone https://github.com/blader/humanizer.git
+git clone https://github.com/truongvinht/humanizer.git
 cd humanizer
 install.bat
 ```
@@ -121,7 +121,7 @@ If you prefer manual installation:
 **Git clone method:**
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/blader/humanizer.git ~/.claude/skills/humanizer
+git clone https://github.com/truongvinht/humanizer.git ~/.claude/skills/humanizer
 ```
 
 **Copy individual language skills:**
@@ -410,8 +410,8 @@ Special thanks to the Wikipedia community for their empirical observation-based 
 Need help or have questions?
 
 - 📖 **Documentation**: Check [CLAUDE.md](CLAUDE.md) for detailed documentation
-- 🐛 **Bug Reports**: [Open an issue](https://github.com/blader/humanizer/issues)
-- 💡 **Feature Requests**: [Start a discussion](https://github.com/blader/humanizer/discussions)
+- 🐛 **Bug Reports**: [Open an issue](https://github.com/truongvinht/humanizer/issues)
+- 💡 **Feature Requests**: [Start a discussion](https://github.com/truongvinht/humanizer/discussions)
 - 🌍 **Community**: Join the Claude Code community
 
 ---
